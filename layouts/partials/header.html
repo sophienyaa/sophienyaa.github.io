@@ -1,5 +1,28 @@
-<!-- JS for the dark/light mode toggle -->
-<script src="/js/themetoggle.js"></script>
+<script>
+  //this seems to work correctly when here, so whatever
+
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  const preference = localStorage.getItem('theme');
+
+  if (darkThemeMq.matches && preference === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+  }
+
+  function switchTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+      }
+      else {       
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+      }    
+  }
+</script>
+
 <!-- site header bar -->
 <header>
     <section>
