@@ -15,7 +15,7 @@ name = "Sophie 🌸"
 # Your profile image. External link or relative to static/. Examples:
 # "https://imgur.com/12345678
 # "image/me.webp"
-image = "/static/img/me-gh.png"
+image = "img/me-gh.jpg"
 about = "just another transfem stereotype"
 email = "me@sophi.ee"
 
