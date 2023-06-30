@@ -17,7 +17,7 @@ name = "Sophie 🌸"
 # "image/me.webp"
 image = "/static/img/me-gh.png"
 about = "just another transfem stereotype"
-email = "sophie@sophieis.lgbt"
+email = "me@sophi.ee"
 
 [params]
 # Name of a file in static/skins/ without the ".css" extension
