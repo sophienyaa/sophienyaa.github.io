@@ -79,3 +79,7 @@ div.highlight::-webkit-scrollbar-thumb {
     border-radius: 6px;
     border: 3px solid var(--scrollbar-border);
 }
+
+.readmoreLink {
+    color: var(--accent) !important;
+}

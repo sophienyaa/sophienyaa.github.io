@@ -56,7 +56,9 @@
           {{ $img := (.Resources.ByType "image").GetMatch "*" }}
           {{ if .Truncated }}...
           <div id="open">
-            <a href="{{ .Permalink }}" class="properties"><strong>[ open me ]</strong></a>
+            <a href="{{ .Permalink }}" class="properties readmoreLink">
+              <strong>[ read more... ]</strong>
+            </a>
           </div>
           {{ end }}
         </article>
