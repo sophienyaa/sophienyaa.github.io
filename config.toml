@@ -13,9 +13,9 @@ tag = "tags"
 [author]
 name = "Sophie 🌸"
 # Your profile image. External link or relative to static/. Examples:
-# "https://imgur.com/123456788"
+# "https://imgur.com/12345678
 # "image/me.webp"
-image = "/satic/img/me-gh.png"
+image = "/static/img/me-gh.png"
 about = "just another transfem stereotype"
 email = "sophie@sophieis.lgbt"
 

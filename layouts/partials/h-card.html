@@ -17,6 +17,8 @@
                 {{ end }}
                 {{ with .Site.Params.githubuser }} {{ $.Site.Params.separator | default "∙" }}
                 <a rel="me" href="https://github.com/{{ . }}">github</a>{{ end }}
+                {{ with .Site.Params.bluesky }} {{ $.Site.Params.separator | default "∙" }}
+                <a rel="me" href="{{ . }}">bluesky</a>{{ end }}
                 {{ with .Site.Params.mastodon }} {{ $.Site.Params.separator | default "∙" }}
                 <a rel="me" href="{{ . }}">mastodon</a>{{ end }}
                 {{ with .Site.Params.twitteruser }} {{ $.Site.Params.separator | default "∙" }}
