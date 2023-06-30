@@ -1,7 +1,12 @@
 ---
-layout:	post
+categories: ["note"] 
 title:	"A RetroPie (or similar) controller for £5?!"
 date:	2018-02-23
+tags:
+  - retropie
+  - electronics
+  - i2c
+  - nintendo
 ---
 
   I recently found myself in [Poundland](https://www.poundland.co.uk/) seeing what a humble pound coin could get me, aside from the usual cables, chargers and similar accessories I buy… seriously, they work fine and are only £1/£2, not to mention their chargers are far better than cheap ones you’d find on ebay! Check out this video from [bigclivedotcom](https://www.youtube.com/watch?v=aS1pwoVdRh4) on the subject.
@@ -69,7 +74,3 @@ It polls the controller every 10ms (this can be changed) for the 6 byte array. F
 The daemon is designed to be run in the background upon boot of the system to register events from the controller and pass them to the virtual keyboard. I also noted that the controller can be connected and disconnected while the daemon is running with no ill effects.
 
 Let me know if you found this useful or interesting, or if you have any suggestions on improving it!
-
-*Originally published at *[*mickwheelz musings*](http://www.mickwheelz.net/2018/02/23/a-retropie-or-similar-controller-for-5/)*.*
-
-  

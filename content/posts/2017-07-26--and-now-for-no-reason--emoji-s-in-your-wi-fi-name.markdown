@@ -1,10 +1,10 @@
 ---
-layout:	post
+categories: ["note"] 
 title:	"…and now for no reason: Emoji’s in your Wi-Fi name!"
 date:	2017-07-26
 ---
 
-  A while ago, I came across someone using emoji as a Wi-Fi network name (SSID), I tried to do the same on my wifi router (I wanted the delightful smiling poo emoji 💩) but my router, sadly wouldn’t let me.
+A while ago, I came across someone using emoji as a Wi-Fi network name (SSID), I tried to do the same on my wifi router (I wanted the delightful smiling poo emoji 💩) but my router, sadly wouldn’t let me.
 
 I saw it again the other day, and I thought I’d have another try, after all this was years ago and I have a much newer router, and newer version of DD-WRT running on it.
 
@@ -26,6 +26,5 @@ But it did give me a good idea… So taking the same approach as in the article,
 
 So far I’ve not had any issues with modern-ish devices finding/connecting to it, however I did leave the 2.4ghz radio of my wireless router alone, so that older devices can use it if need be.
 
-*Originally published at *[*mickwheelz musings*](http://www.mickwheelz.net/2017/07/26/and-now-for-no-reason-emojis-in-your-wi-fi-name/)*.*
 
   

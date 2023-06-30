@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Hacking cat printers for fun and... likes on twitter?
 date: 2022-04-23 11:30:00 +0100
-categories:
+categories: ["note"] 
+tags: 
 - hacking
 - hardware
 - catprinter
@@ -12,8 +12,8 @@ categories:
 - printer
 - ipp
 image: "/img/uwu-transparent.png"
-
 ---
+
 ![Header Image](/img/cat-printer.png)
 
 Allow me to introduce you to this...
@@ -81,7 +81,7 @@ So with that in mind, on to the...
 
 ### Software
 
-I decided to build my version of cat printer goodness in NodeJS, which I've called `printkitty.js`, imaginative, I know. You can check it out on [GitHub here](https://github.com/mickwheelz/printkitty.js)
+I decided to build my version of cat printer goodness in NodeJS, which I've called `printkitty.js`, imaginative, I know. You can check it out on [GitHub here](https://github.com/sophienyaa/printkitty.js)
 
 I chose NodeJS mostly because it's what I am comfortable with. This, as it turns out, may not have been the best decision... due to reasons I'll get in to later.
 
@@ -222,6 +222,6 @@ In these experiments, along with learning about the hardware itself,  I learnt m
 
 The friend who inspired me to get one in the first place conducted her own set of cat printer experimentation, going even further by setting up things like a [telegram bot](https://twitter.com/xssfox/status/1469595519773122566) and printing images from [SSTV](https://twitter.com/xssfox/status/1418727717135028227), which are worth checking out.
 
-If you've got your own cat printer, or been inspired to get one by this post, please give [printkitty.js](https://github.com/mickwheelz/printkitty.js) a try, I'd love to hear your feedback... and if you go on to experiment yourself I'd absolutely love to see your car printer projects!
+If you've got your own cat printer, or been inspired to get one by this post, please give [printkitty.js](https://github.com/sophienyaa/printkitty.js) a try, I'd love to hear your feedback... and if you go on to experiment yourself I'd absolutely love to see your car printer projects!
 
 Finally, I'd like to say thanks to everyone who's work I've referenced in this post, as what they've done has enabled my experimentation here.

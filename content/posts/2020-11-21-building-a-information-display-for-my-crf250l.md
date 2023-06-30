@@ -1,8 +1,10 @@
 ---
-layout: post
+categories: ["note"] 
 title: Building a information display for my CRF250L
 date: 2020-11-21T15:00:00.000+00:00
-categories: electronics motorcycle
+tags: 
+  - electronics 
+  - motorcycle
 image: "/img/assembled-version.jpg"
 
 ---

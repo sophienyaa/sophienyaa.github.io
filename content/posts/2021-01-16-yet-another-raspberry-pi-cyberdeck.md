@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Yet another Raspberry Pi Cyberdeck
 date: 2021-01-17 17:30:00 +0000
-categories:
+categories: ["note"] 
+tags: 
 - cyberpunk
 - cyberdeck
 - raspberry pi
@@ -10,7 +10,6 @@ categories:
 - hacking
 - hardware
 image: "/img/dmesg.jpg"
-
 ---
 ![Header Image](/img/dmesg.jpg)
 

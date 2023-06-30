@@ -1,9 +1,11 @@
 ---
-layout: post
+categories: ["note"] 
 title: Microservices inside Salesforce With Platform Events and Change Data Capture,
   Part Two
 date: 2020-12-27T13:00:00.000+00:00
-categories: salesforce microservices
+tags: 
+  - salesforce
+  - microservices
 image: "/img/23b9a76b8b2a24bf3937cd648179c24f_badge.png"
 
 ---
