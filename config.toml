@@ -15,8 +15,8 @@ name = "Sophie 🌸"
 # Your profile image. External link or relative to static/. Examples:
 # "https://imgur.com/123456788"
 # "image/me.webp"
-image = ""
-about = "Gender? I hardly even know her!"
+image = "/satic/img/me-gh.png"
+about = "just another transfem stereotype"
 email = "sophie@sophieis.lgbt"
 
 [params]
@@ -38,6 +38,7 @@ skin = "macintosh"
 githubuser = "sophienyaa"
 twitteruser = "nyaasophie" # no @ in front
 mastodon = "https://tech.lgbt/@sophienyaa" # full link to your instance profile
+bluesky = "https://bsky.app/profile/sophi.ee"
 
 [permalinks]
 # Format for feed entry links. You probably don't need to change this.
