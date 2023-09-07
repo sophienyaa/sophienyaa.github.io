@@ -4,7 +4,7 @@ date: 2023-09-08 00:00:00 +0100
 categories: ["note"] 
 tags: 
 - personal
-image: "/img/uwu-transparent.png"
+image: "/img/DSCF4104_small.jpg"
 ---
 
 Hi Everyone,
