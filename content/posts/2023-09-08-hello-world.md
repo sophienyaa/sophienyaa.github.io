@@ -7,6 +7,9 @@ tags:
 image: "/img/DSCF4104_small.jpg"
 ---
 
+![me](/img/DSCF4104_small.jpg)
+
+
 Hi Everyone,
 
 Today is my 35th Birthday and normally, this would be just another day for me… I was never really one for celebrating. 
