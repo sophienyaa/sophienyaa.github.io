@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie&#39;s Space</title>
+     
+    
+
+    
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
+
+    
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+     <link rel="me" href="https://github.com/sophienyaa" />  
+     <link rel="me" href="https://twitter.com/nyaasophie" />  
+     <link rel="me" href="https://tech.lgbt/@sophienyaa" /> 
+     <link rel="me" href="https://bsky.app/profile/sophi.ee" /> 
+
+    
+    <link rel="stylesheet" href="https://sophieis.lgbt/css/layout.css" crossorigin="anonymous" media="screen">  
+    <link rel="stylesheet" href="https://sophieis.lgbt/skins/macintosh.css" crossorigin="anonymous" media="screen">
+
+    
+     
+
+    
+     
+
+    
+    <meta property="og:url" content="https://sophieis.lgbt/" />
+    <meta property="og:title" content="Sophie&#39;s Space" />
+    <meta property="og:site_name" content="Sophie&#39;s Space" />
+    <meta property="og:type" content="website" />  
+
+    <meta name="twitter:title" content="Sophie&#39;s Space" />   
+    <meta name="twitter:creator" content="nyaasophie" /> 
+</head><body><script>
+  
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  darkThemeMq.addListener(e => {
+   if (e.matches) {
+    console.log("found dark")
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+   } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+  });
+
+  function switchTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+      }
+      else {       
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+      }    
+  }
+</script>
+
+
+<header>
+    <section>
+        <div class="header row">
+            <div class="header__item row" style="margin-left: 0;">
+               <div id="logo"> 
+                  
+                </div>
+                <div>
+                  <a id="site__name" href="https://sophieis.lgbt/">
+                    Sophie&#39;s Space
+                  </a>
+                  
+                  <div class="rhs_item">
+                    <a href="#" onclick="switchTheme()">☾</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+          
+            
+      </div>
+    </section>
+</header>
+
+
+<main aria-role="main">
+    <section>
+        <ul id="feed__ul">
+            <li class="feed__li h-entry">
+                <div class="feed__content">
+                    <time class="hidden dt-published">2020-12-12 15:00:00 &#43;0000 GMT</time>
+                    <div class="flex properties__row ">
+                        <div rel="author" class="flex left p-author h-card">
+                            <img class="u-photo"
+                                src="https://sophieis.lgbt/img/me-gh.jpg"
+                                alt="Sophie 🌸" id="author-img">
+                            <div>
+                                <p rel="me" class="p-name" id="author-name">
+                                    
+                                    Sophie 🌸
+                                    
+                                </p>
+                                <p class="properties">
+                                    
+                                    Dec 12, 2020
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex right properties">
+                          
+                            <a class="icon u-url" href="https://sophieis.lgbt/posts/2020-12-12-microservices-on-salesforce/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bookmark">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <article class="md p-summary p-name e-content">
+                        <h2>Microservices inside Salesforce With Platform Events and Change Data Capture, Part One.</h2>
+                        
+                                <p>
+<img class="enclosure" src="/img/23b9a76b8b2a24bf3937cd648179c24f_badge.png" alt="Header Image"  />
+</p>
+<p>Normally, when I do a talk at Dreamforce, or another conference, I write a follow up blog post covering the same content. But the end of 2019 was pretty busy with <a href="https://www.salesforce.com/blog/dreamforce-2019-infographic/">Dreamforce</a>, <a href="https://www.theadventurists.com/adventures/monkey-run-morocco/">Monkey Run Morocco</a>, <a href="https://frenchtouchdreamin.com/">French Touch Dreamin</a> and Christmas/Holidays. I figured I&rsquo;d get it written up in early 2020&hellip;</p>
+<p>Then 2020 happened&hellip; and turned in to a complete dumpster fire. With everything going on, I was finding it difficult to find the time and motivation to write anything. With the year almost over, and my blog revamped I knew I wanted to get it written.</p>
+<p>Enough boring excuses. Here we go.</p>
+<p>This is part one of the follow up post to my talk &ldquo;Microservices inside Salesforce With Platform Events and Change Data Capture&rdquo;. If you did catch my talk at Dreamforce 2019, or London&rsquo;s Calling 2020, I hope you enjoyed it. If not (or even if you did!), read on as I will cover the same topics here.</p>
+<p>In part one we will cover the concepts, and in part two, the implementation. The first thing we need to understand is&hellip;</p>
+<h3 id="what-are-microservices">What are microservices?</h3>
+<p>The key to microservices is kind of in the name; small (micro) services. These services generally cover a specific functional area, or function and perform only that function. (e.g generating documents, or handling payments).</p>
+<p>Ideally, these services are independently deployable, maintainable and testable. In larger applications or organisations these services are often developed and maintained by different teams, even using different languages or tech stacks. They are loosely coupled to other services and shouldn&rsquo;t have any &lsquo;hard dependencies&rsquo; on them.</p>
+<p>When grouped together, all of these services, and their supporting infrastructure make up a larger application (e.g a Billing System).</p>
+<p>A good analogy is the robots in a car factory. You have robots to weld the cars, robots to paint them and so on.  The painting robot is independent of the welding one. It does not know how to weld, or care how the car was welded. All it does is paint the car and send it on to the next station (micro service) in the factory (application)</p>
+<p>
+<img class="enclosure" src="/img/abb-paint-atomizer.jpg" alt=""  />
+</p>
+<p>One of the key benefits of this is it means that when it comes time to upgrade the welding robot, the painting one does not need to be changed. Likewise if the painting robot needs to be changed, the welding robot doesn&rsquo;t care.</p>
+<p>As you&rsquo;ve probably experienced, changing chunks of a normal &lsquo;monolithic&rsquo; type application can be painful, as it&rsquo;s often tightly connected to other parts of the application with no easy way to change just the one part you need to.</p>
+<p>With a microservice approach, often these issues are either removed entirely, or heavily mitigated.</p>
+<p>This is great and all, but these micro services need a way to communicate with each other, this needs to be in a &lsquo;common language&rsquo; they can all understand, so this brings us to&hellip;</p>
+<h3 id="what-is-an-event-driven-architecture">What is an event-driven architecture?</h3>
+<p>So as alluded to above, this approach hinges on these services having a common way to talk to each other.
+If I&rsquo;ve got a service written in Apex on Salesforce, it has to know how to talk to a service written in NodeJS on Heroku, or something written in Java running on-prem.</p>
+<p>This is where an event-driven architecture comes into play. It means that all of these services share a common eventbus on to which they publish (or push) to and subscribed to (or consume from), normally these events are segregated into topics or channels. I am going to use the terms publish, subscribe and topic to describe this from here on out.</p>
+<p>The event bus sits in the middle of all of these microservices, services produce and subscribe to it to move data between them and perform their functions. The event bus also often manages things like queueing, replay of events, access to topics and security. Some common event buses are Apache Kafka, MQTT and CometD.
+Salesforce of course also has its own event bus, the Enterprise Messaging Platform (often just called Platform Events, which uses CometD)</p>
+<p>
+<img class="enclosure" src="/img/9d0edf028a3e0056757e93a3244a43de_salesforce-event-bus.jpeg" alt=""  />
+</p>
+<p>To better understand this concept, let&rsquo;s think for a second about twitter, it is like an event bus. If I see #Salesforce trending on twitter, I might click on that hashtag. This would mean I am &lsquo;subscribing&rsquo; to the Salesforce &rsquo;topic&rsquo;. If I then tweet &ldquo;#Salesforce is awesome&rdquo; I am then &lsquo;publishing&rsquo; to Salesforce &rsquo;topic&rsquo;, and anyone else following #Salesforce (aka subscribing to that topic) will see that message. Your microservices work the same way.</p>
+<p>Each service will publish and subscribe to topics it &lsquo;cares&rsquo; about in order to function. It doesn&rsquo;t really have any knowledge of the other services, it just grabs the information it needs to do its job, and publishes its results for other services to do the same. This of course allows for services to be swapped/changed/enhanced without causing impact to other services within the application.</p>
+<p>Another key feature of an event driven architecture is the ability for multiple subscribers to subscribe to the same topic. Often we only want one service producing to a topic, but there are exceptions to this rule.</p>
+<p>For example, if I am building a billing system, perhaps I need to perform some tasks when an Opportunity is closed/won.
+I might need to generate a PDF invoice to send to the customer or I might need to generate a packing slip to send to a warehouse.
+If all of these subscribe to the &lsquo;Opportunity&rsquo; topic, then all of them can perform their task independently when they receive a closed/won opportunity message on that topic. Likewise, if I have one source of truth for Opportunity data (Salesforce) then I don&rsquo;t want other systems publishing data to the Opportunity topic.</p>
+<p>If in the future I also need to activate the customer&rsquo;s new service in another system, the new system can simply listen to this topic! We don&rsquo;t need to make any changes to the existing systems, we can just &lsquo;bolt on&rsquo; this new system.</p>
+<p>All of this sounds exciting right? So&hellip;</p>
+<h3 id="how-does-this-relate-to-salesforce">How does this relate to Salesforce?</h3>
+<p>Salesforce has a number of tools to help us out here, under the banner of &lsquo;The Salesforce enterprise messaging platform&rsquo;. This is often just called &lsquo;Platform Events&rsquo;, however Platform Events are just one of the tools available to us.</p>
+<p>There are two we are going to cover in detail here, Platform Events and Change Data Capture.</p>
+<p>So let&rsquo;s start with&hellip;</p>
+<h4 id="platform-events">Platform Events</h4>
+<p>Platform Events in this context is the term salesforce gives to custom topics. e.g topics we are developers are able to define and use for whatever we like.</p>
+<p>We can define a platform event in much the same way as a Custom Object. They have a name like &ldquo;My_Cool_Event__e&rdquo; and have various field types that can be added to them (text, numbers, checkboxes, etc) which will contain the data for subscribers to use, or for publishers to populate.</p>
+<p>Once we have defined our platform event &rsquo;topic&rsquo;, we can then publish events to it. This can be done from within Apex code, from processes or flow, or via Salesforce APIs from external services.</p>
+<p>We can also subscribe to events from Apex triggers, processes, flows, lightning and visualforce components, or in external services via CometD.</p>
+<p>Platform events are the most flexible kind of event, as they can be defined to contain any information we want, and be published or subscribed through a number of different methods.</p>
+<p>There however is another very useful kind of event, these are&hellip;</p>
+<h4 id="change-data-capture">Change Data Capture</h4>
+<p>Change data capture (CDC) is a feature of Salesforce that publishes &lsquo;change events&rsquo;, These events represent changes to Salesforce records. Things that are classified as changes, and thus are published include creation of a record, updating a record, and deleting or undeleting a record. Once enabled for an object, these events are automatically published by Salesforce.</p>
+<p>Change data capture is similar in a lot of ways to Platform Events and, in fact, uses the same underlying bus. The main difference is that publication of these events is done automatically by salesforce, and the layout of data within them (their schema) is unable to be changed by us. We can, however, subscribe to these events in the exact same way as a Platform Event.</p>
+<p>Why is CDC important? Well it means that we can subscribe to any change in data across Salesforce, so in our billing example above, we don&rsquo;t need to define our own &lsquo;Opportunity&rsquo; event, we can simply enable CDC and subscribe to the events we need.</p>
+<p>Now that we know about CDC, we need to&hellip;</p>
+<h4 id="put-it-all-together">Put it all together</h4>
+<p>We know that the &lsquo;Salesforce Enterprise Messaging Platform&rsquo; is our event bus. It is a part of Salesforce, and our publishers and subscribers (aka our micro services) need to be able to access it. For services on platform, it&rsquo;s easy.</p>
+<p>There is nothing special that needs to happen (aside from creating Platform Events or enabling CDC), you just need to build them. It&rsquo;s slightly harder with Services outside of Salesforce. They need users accounts, and the appropriate level of access and your micro services needs to understand how to publish or subscribe to events (more on this in part two&hellip;)</p>
+<p>We also know that our topics are Platform Events (if defined by us) or Change Data Capture (defined by Salesforce). We know that we can subscribe to both CDC and Platform Events in a variety of ways both on and off platform. We also know that we can publish Platform Events in a number of ways both on and off platform. Finally, we know that CDC events are published for us by Salesforce (once enabled).</p>
+<h3 id="conclusion-and-further-reading">Conclusion and Further Reading</h3>
+<p>In part one, we covered the main concepts, microservices and event driven architecture. How they work together and how they apply to Salesforce with Platform Events and Change Data Capture.</p>
+<p>In part two we will cover how to build an application with these concepts, including how to swap out a service within that application to an off-platform version!</p>
+<p>I hope you&rsquo;ve found this informative, and if you&rsquo;ve got any questions or comments, please send me a tweet <a href="https://twitter.com/mickwheelz_">@mickwheelz_</a>. If you want to learn more in the meantime, check out the links below;</p>
+<p><a href="https://developer.salesforce.com/blogs/2018/07/which-streaming-event-do-i-use.html">Salesforce Blog - Which Streaming Event Do I Use?</a></p>
+<p><a href="https://trailhead.salesforce.com/content/learn/modules/platform_events_basics">Trailhead - Platform Event Basics</a></p>
+
+                                
+                                <a class="hidden" href="https://brid.gy/publish/mastodon"></a>
+                                <a class="hidden" href="https://brid.gy/publish/twitter"></a>
+                                <a class="hidden" href="https://fed.brid.gy/"></a>
+                                <data class="p-bridgy-omit-link" value="false"></data>
+                            </article>
+                            <div class="flex properties__row  properties">
+    <div class="flex left properties">
+        <span class="properties">
+            
+            <span class="dt-published hidden">2020-12-12 15:00:00 &#43;0000 GMT</span>
+            <a class="icon u-url" href="https://sophieis.lgbt/posts/2020-12-12-microservices-on-salesforce/">
+                
+                
+                
+                
+                
+                1039 days ago
+                
+            </a>
+            
+        </span>
+    </div>
+    <div class="flex right">
+        
+        <a class="p-category properties" id="tag" href="https://sophieis.lgbt/tags/salesforce/">#salesforce</a>
+        
+        <a class="p-category properties" id="tag" href="https://sophieis.lgbt/tags/microservices/">#microservices</a>
+        
+    </div>
+</div>
+                </div>
+                
+
+
+<script src="/js/webmention.min.js" data-wordcount="100" async></script>
+
+                
+                <div id="webmentions"></div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie&#39;s Space</title>
+     
+    
+
+    
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
+
+    
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+     <link rel="me" href="https://github.com/sophienyaa" />  
+     <link rel="me" href="https://twitter.com/nyaasophie" />  
+     <link rel="me" href="https://tech.lgbt/@sophienyaa" /> 
+     <link rel="me" href="https://bsky.app/profile/sophi.ee" /> 
+
+    
+    <link rel="stylesheet" href="https://sophieis.lgbt/css/layout.css" crossorigin="anonymous" media="screen">  
+    <link rel="stylesheet" href="https://sophieis.lgbt/skins/macintosh.css" crossorigin="anonymous" media="screen">
+
+    
+     
+
+    
+     
+
+    
+    <meta property="og:url" content="https://sophieis.lgbt/" />
+    <meta property="og:title" content="Sophie&#39;s Space" />
+    <meta property="og:site_name" content="Sophie&#39;s Space" />
+    <meta property="og:type" content="website" />  
+
+    <meta name="twitter:title" content="Sophie&#39;s Space" />   
+    <meta name="twitter:creator" content="nyaasophie" /> 
+</head><body><script>
+  
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  darkThemeMq.addListener(e => {
+   if (e.matches) {
+    console.log("found dark")
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+   } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+  });
+
+  function switchTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+      }
+      else {       
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+      }    
+  }
+</script>
+
+
+<header>
+    <section>
+        <div class="header row">
+            <div class="header__item row" style="margin-left: 0;">
+               <div id="logo"> 
+                  
+                </div>
+                <div>
+                  <a id="site__name" href="https://sophieis.lgbt/">
+                    Sophie&#39;s Space
+                  </a>
+                  
+                  <div class="rhs_item">
+                    <a href="#" onclick="switchTheme()">☾</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+          
+            
+      </div>
+    </section>
+</header>
+
+
+<main aria-role="main">
+    <section>
+        <ul id="feed__ul">
+            <li class="feed__li h-entry">
+                <div class="feed__content">
+                    <time class="hidden dt-published">2020-11-21 15:00:00 &#43;0000 GMT</time>
+                    <div class="flex properties__row ">
+                        <div rel="author" class="flex left p-author h-card">
+                            <img class="u-photo"
+                                src="https://sophieis.lgbt/img/me-gh.jpg"
+                                alt="Sophie 🌸" id="author-img">
+                            <div>
+                                <p rel="me" class="p-name" id="author-name">
+                                    
+                                    Sophie 🌸
+                                    
+                                </p>
+                                <p class="properties">
+                                    
+                                    Nov 21, 2020
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex right properties">
+                          
+                            <a class="icon u-url" href="https://sophieis.lgbt/posts/2020-11-21-building-a-information-display-for-my-crf250l/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bookmark">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <article class="md p-summary p-name e-content">
+                        <h2>Building a information display for my CRF250L</h2>
+                        
+                                <p>
+<img class="enclosure" src="/img/assembled-version.jpg" alt="Header Image"  />
+</p>
+<p>One of the small handful of motorcycles I own is a 2015 Honda CRF250L. I bought it after doing the Monkey Run Morocco in 2019 (maybe I should write about that one day&hellip;) and realising this whole off road / adventure motorcycling thing is a lot of fun.</p>
+<p>The CRF250L is an excellent beginners adventure bike. It&rsquo;s lightweight, easy to ride and decent off road. It&rsquo;s not an Africa Twin by any stretch, but for someone like me who is starting out, it&rsquo;s great.</p>
+<p>That said, there is room for improvement. The bike had a few choice mods when I bought it. Things like a smaller front sprocket (for a bit more low down torque), aftermarket air filter, bar risers, heated grips, hand guards, foldable mirrors and a rear rack.</p>
+<p>One of the things I disliked about the bike was how basic its dash was. It has no tach and no temp gauge. You get speed, fuel, time and some lights&hellip; that&rsquo;s it.</p>
+<p>
+<img class="enclosure" src="/img/dash-stock.jpg" alt="stock-dash"  />
+</p>
+<p>It has an over-temp light, and obviously you don&rsquo;t <em>need</em> a tachometer, but it is nice to have a better idea of what the bike is doing.</p>
+<p>I wondered if, being a somewhat modern bike, there would be some sort of diagnostic port that I could connect to to get this data. As it turns out, there is!</p>
+<p>&ldquo;Modern&rdquo; Honda motorcycles have a 4 pin connector called a HDS port. This is <em>similar</em> in function to the OBD port in a car. In fact that was one of the first approaches I looked in to, after finding <a href="https://www.lonelec.co.uk/Honda-4pin-OBD2-Adaptor">HDS to OBD adapter</a> cables online.</p>
+<p>After further research (huge shout-out to the <a href="http://forum.pgmfi.org/">PGM-FI forums</a>) found that Honda does use a standard protocol (KWP2000), but most cheap ELM327 OBD adaptors (including the one I had) are incompatible with it, as it has a non-standard initialisation sequence. I did try it anyway, after making a cable (aka jamming some wires into the HDS port and clipping them to the ELM327 device) I was able to confirm it didn&rsquo;t work.</p>
+<p>So I kept looking and stumbled across two things that made me realise this was possible. The first was the <a href="https://gonzos.net/projects/ctx-obd/">CTX-OBD</a> project that had a similar goal/idea to what I was hoping to do. The second was the KWP2000 library for arduino that Aster94 had on <a href="https://github.com/aster94/Keyword-Protocol-2000">GitHub</a>.</p>
+<p>I didn&rsquo;t end up using the KWP2000 library (as it&rsquo;s only been implemented for Suzuki) but I did use the hardware (namely a <a href="https://www.st.com/resource/en/datasheet/l9637.pdf">L9637D</a> bus driver)</p>
+<p>I was able to finally prove the theory with some very ropey code, an Arduino Nano and the L9637D.</p>
+<p>
+<img class="enclosure" src="/img/ardu-nano.jpg" alt="ardu nano"  />
+</p>
+<p>Once the excitement of seeing data from my bike&rsquo;s ECU being displayed on my laptop, I  had to think about how I would build the actual device.</p>
+<p>For the display, I decided to use an cheap ILI9341 SPI display, as they are easy to work with and I had a few laying about. For the microcontroller I went with an ESP32. I could&rsquo;ve used the Arduino Nano, but the ESP gives me a <em>much</em> faster CPU, more memory, more peripherals and the option to use things like WiFi and Bluetooth in the future. They are also incredibly cheap and I had a few of them kicking around.</p>
+<p>I put together a prototype using the ESP32, a display and the L9637D chip.</p>
+<p>After much tweaking it all worked and I knew the design was viable, so I designed a PCB in Eagle CAD. I sent it over to PCBWay for fab (my first time using them) and a week or so later these turned up.</p>
+<p>
+<img class="enclosure" src="/img/pcbs.jpg" alt="pcbs"  />
+</p>
+<p>I was very happy with the PCBs. They did have a small mistake, which was entirely my fault and only required cutting a trace. After fixing that and soldering everything on, I was able to flash the firmware I&rsquo;d written and it was ready to go. I added a few more features like an external temperature sensor (using a DHT22) and a GPS module for speed/heading/etc.</p>
+<p>I needed a case, so designed something basic in Fusion360 and 3D printed it. I decided to go with a generic GoPro style mount on the bottom, which I paired with a handlebar mount I had to mount it to the bike.</p>
+<p>
+<img class="enclosure" src="/img/assembled-version.jpg" alt="assembled-version"  />
+</p>
+<p>I mounted it to the bike, and lo and behold, it worked! I took the bike for a ride and discovered a few bugs in the firmware (like the speed being reported in KPH not MPH) but it actually worked!</p>
+<!-- raw HTML omitted -->
+<p>I have done a much more technical write-up on the project&rsquo;s <a href="https://github.com/mickwheelz/Honda-Motorcycle-Dash">GitHub repo</a>, which includes a wiki.</p>
+<p>So whats next? Well I&rsquo;ve designed a version 2 of the PCB, which has simpler power delivery, and uses a display directly mounted to it. I will cover this new version in a future blog! I also need to do some more work on the firmware, and the documentation, which will come in time.</p>
+<p>This should work on other Honda bikes, so if you&rsquo;ve got a Honda made in the last 10 years or so, and give it a try please do let me know how you go!</p>
+
+                                
+                                <a class="hidden" href="https://brid.gy/publish/mastodon"></a>
+                                <a class="hidden" href="https://brid.gy/publish/twitter"></a>
+                                <a class="hidden" href="https://fed.brid.gy/"></a>
+                                <data class="p-bridgy-omit-link" value="false"></data>
+                            </article>
+                            <div class="flex properties__row  properties">
+    <div class="flex left properties">
+        <span class="properties">
+            
+            <span class="dt-published hidden">2020-11-21 15:00:00 &#43;0000 GMT</span>
+            <a class="icon u-url" href="https://sophieis.lgbt/posts/2020-11-21-building-a-information-display-for-my-crf250l/">
+                
+                
+                
+                
+                
+                1060 days ago
+                
+            </a>
+            
+        </span>
+    </div>
+    <div class="flex right">
+        
+        <a class="p-category properties" id="tag" href="https://sophieis.lgbt/tags/electronics/">#electronics</a>
+        
+        <a class="p-category properties" id="tag" href="https://sophieis.lgbt/tags/motorcycle/">#motorcycle</a>
+        
+    </div>
+</div>
+                </div>
+                
+
+
+<script src="/js/webmention.min.js" data-wordcount="100" async></script>
+
+                
+                <div id="webmentions"></div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

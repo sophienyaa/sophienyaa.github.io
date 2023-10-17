@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie&#39;s Space</title>
+     
+    
+
+    
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
+
+    
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+     <link rel="me" href="https://github.com/sophienyaa" />  
+     <link rel="me" href="https://twitter.com/nyaasophie" />  
+     <link rel="me" href="https://tech.lgbt/@sophienyaa" /> 
+     <link rel="me" href="https://bsky.app/profile/sophi.ee" /> 
+
+    
+    <link rel="stylesheet" href="https://sophieis.lgbt/css/layout.css" crossorigin="anonymous" media="screen">  
+    <link rel="stylesheet" href="https://sophieis.lgbt/skins/macintosh.css" crossorigin="anonymous" media="screen">
+
+    
+     
+
+    
+     
+
+    
+    <meta property="og:url" content="https://sophieis.lgbt/" />
+    <meta property="og:title" content="Sophie&#39;s Space" />
+    <meta property="og:site_name" content="Sophie&#39;s Space" />
+    <meta property="og:type" content="website" />  
+
+    <meta name="twitter:title" content="Sophie&#39;s Space" />   
+    <meta name="twitter:creator" content="nyaasophie" /> 
+</head><body><script>
+  
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  darkThemeMq.addListener(e => {
+   if (e.matches) {
+    console.log("found dark")
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+   } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+  });
+
+  function switchTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+      }
+      else {       
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+      }    
+  }
+</script>
+
+
+<header>
+    <section>
+        <div class="header row">
+            <div class="header__item row" style="margin-left: 0;">
+               <div id="logo"> 
+                  
+                </div>
+                <div>
+                  <a id="site__name" href="https://sophieis.lgbt/">
+                    Sophie&#39;s Space
+                  </a>
+                  
+                  <div class="rhs_item">
+                    <a href="#" onclick="switchTheme()">☾</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+          
+            
+      </div>
+    </section>
+</header>
+
+    <main aria-role="main">
+        <section>
+<div class="h-card" rel="author" id="author">
+    <div class="flex row">
+        <img class="u-photo" id="author-img" alt="Sophie 🌸"
+            src="https://sophieis.lgbt/img/me-gh.jpg">
+        <div id="card" class="md">
+            <h1 class="p-name">Sophie 🌸</h1>
+            <address class="properties">
+                
+                <a class="u-url u-uid" href="https://sophieis.lgbt/tags/">sophieis.lgbt</a>
+                
+                 ∙
+                <a class="u-email" href="mailto:me@sophi.ee">me@sophi.ee</a>
+                
+                 ∙
+                <a rel="me" href="https://github.com/sophienyaa">github</a>
+                 ∙
+                <a rel="me" href="https://bsky.app/profile/sophi.ee">bluesky</a>
+                 ∙
+                <a rel="me" href="https://tech.lgbt/@sophienyaa">mastodon</a>
+                 ∙
+                <a rel="me" href="https://twitter.com/nyaasophie">twitter</a>
+            </address>
+            <p class="p-note">
+                
+                
+                just another transfem stereotype.... computers, electronics, general nerdery
+            </p>
+        </div>
+    </div>
+</div><hr />
+
+<ul id="feed__ul">
+    <div class="feed">
+        <div class="feed__content">
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/cat-printer/">#cat printer</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/catprinter/">#catprinter</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/cyberdeck/">#cyberdeck</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/cyberpunk/">#cyberpunk</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/electronics/">#electronics</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/hacking/">#hacking</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/hardware/">#hardware</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/i2c/">#i2c</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/ipp/">#ipp</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/microservices/">#microservices</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/motorcycle/">#motorcycle</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/nintendo/">#nintendo</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/nyaa/">#nyaa</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/personal/">#personal</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/printer/">#printer</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/raspberry-pi/">#raspberry pi</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/retropie/">#retropie</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/salesforce/">#salesforce</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/sbc/">#sbc</a>
+                </div>
+            </li>
+            
+            <li id="tag-list">
+                <div>
+                    <a class="properties" href="https://sophieis.lgbt/tags/uwu/">#uwu</a>
+                </div>
+            </li>
+            
+        </div>
+    </div>
+</ul>
+
+        </section>
+    </main>
+</body>
+</html>
