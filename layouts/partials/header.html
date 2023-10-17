@@ -1,14 +1,16 @@
 <script>
   //this seems to work correctly when here, so whatever
 
-  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
   const preference = localStorage.getItem('theme');
 
-  if (darkThemeMq.matches && preference === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-  }
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  darkThemeMq.addListener(e => {
+   if (e.matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+   } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+  });
 
   function switchTheme() {
       const currentTheme = document.documentElement.getAttribute('data-theme');
